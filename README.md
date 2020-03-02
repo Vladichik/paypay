@@ -10,6 +10,11 @@ Vuetify componnts library was used for quicker qomponent implementation.
 
 Backend/Database was implemented with Firestore cloud platform.
 
+3d party libraries used in this project:
+Moment.js for time formatting
+vue-uuid - to generate unique ids for employess and feedbacks
+vue-spinners - to show http requests preloader
+
 
 # install dependencies
 $ npm install
