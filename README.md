@@ -5,6 +5,12 @@
 ## Build Setup
 
 ``` bash
+Client side implemented with Vue.js and Nuxt
+Vuetify componnts library was used for quicker qomponent implementation.
+
+Backend/Database was implemented with Firestore cloud platform.
+
+
 # install dependencies
 $ npm install
 
