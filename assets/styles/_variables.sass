@@ -1,0 +1,29 @@
+
+$app_main_color: #3c9cff
+
+=setGridAuto($size, $gap, $type)
+  display: grid
+  @if ($type == "columns")
+    grid-auto-columns: $size
+    grid-template-columns: $size
+    grid-column-gap: $gap
+    grid-auto-flow: column
+  @else if ($type == "rows")
+    grid-auto-rows: $size
+    grid-template-rows: $size
+    grid-row-gap: $gap
+    grid-auto-flow: row
+
+=setGrid($columns, $columns-gap, $rows, $rows-gap, $type)
+  display: grid
+  @if ($type == 'columns')
+    grid-template-columns: $columns
+    grid-column-gap: $columns-gap
+  @else if ($type == 'rows')
+    grid-template-rows: $rows
+    grid-row-gap: $rows-gap
+  @else if ($type == 'both')
+    grid-template-columns: $columns
+    grid-column-gap: $columns-gap
+    grid-template-rows: $rows
+    grid-row-gap: $rows-gap
